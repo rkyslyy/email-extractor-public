@@ -1,0 +1,230 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>SalesQL</title>
+  <link rel="stylesheet" href="../css/fontawesome.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div>
+    <div class="app-container">
+      <header class="sql-header">
+        <div class="app-header">
+          <img
+            alt="SalesQL"
+            src="https://salesql.s3.eu-central-1.amazonaws.com/ext/img/SalesQL_logo_color_white_bg.svg"
+            class="logo"
+          />
+          <!---->
+          <div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div data-v-1c25e553="" class="modal-backdrop job-dialog" style="display: none">
+          <div data-v-1c25e553="" class="custom-empty-card-wrapper">
+            <div>
+              <div class="job-dialog-text header bold">Heads Up!</div>
+              <div class="job-dialog-body">
+                <div class="job-dialog-text">
+                  Add up to <span class="bold">400</span> contacts every
+                  <span class="bold">24 hrs</span> to avoid Linkedin warnings. If you are a
+                  Sales Navigator or Linkedin Recruiter user, add up to
+                  <span class="bold">1.000</span> every <span class="bold">24 hrs</span>
+                </div>
+                <div class="job-dialog-text bold blue title">
+                  Please copy and paste the LinkedIn profile's URLs here
+                </div>
+                <div class="input-container">
+                  <div data-v-300136c8="" class="sql-library-input textarea-input">
+                    <div data-v-300136c8="" class="sql-input-container">
+                      <textarea
+                        data-v-300136c8=""
+                        placeholder="Urls to import"
+                        rows="5"
+                        class="scrollbar-1 sql-input no-resize"
+                      ></textarea>
+                    </div>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+              <div class="job-dialog-body">
+                <div class="job-dialog-text">We have detected 0 linkedin urls.</div>
+              </div>
+              <div class="job-dialog-projects">
+                <label class="el-checkbox job-checkbox is-checked"
+                  ><span class="el-checkbox__input is-checked"
+                    ><span class="el-checkbox__inner"></span
+                    ><input
+                      type="checkbox"
+                      aria-hidden="false"
+                      class="el-checkbox__original"
+                      value="" /></span
+                  ><!----></label
+                >
+                <div class="job-dialog-text">
+                  Do not add contacts to the folder if they already belong to another one.
+                </div>
+              </div>
+              <div class="job-dialog-body projects-text">
+                <div class="job-dialog-text">Adding contacts to</div>
+                <div class="job-projects-dropdown">
+                  <span
+                    ><div
+                      role="tooltip"
+                      id="el-popover-5477"
+                      aria-hidden="true"
+                      class="el-popover el-popper sql-folders-dropdown"
+                      tabindex="0"
+                      style="display: none"
+                    >
+                      <!---->
+                    </div>
+                    <div
+                      class="el-popover__reference"
+                      aria-describedby="el-popover-5477"
+                      tabindex="0"
+                    ></div
+                  ></span>
+                </div>
+              </div>
+              <div class="job-dialog-body projects-text">
+                <div class="job-dialog-text">Tagging to</div>
+                <div class="job-projects-dropdown">
+                  <span
+                    ><div
+                      role="tooltip"
+                      id="el-popover-968"
+                      aria-hidden="true"
+                      class="el-popover el-popper sql-projects-dropdown"
+                      tabindex="0"
+                      style="display: none"
+                    >
+                      <!---->
+                    </div>
+                    <div
+                      class="el-popover__reference"
+                      aria-describedby="el-popover-968"
+                      tabindex="0"
+                    >
+                      <div data-v-57fb6fee="" class="sql-project-tags project-tags">
+                        <div data-v-57fb6fee="" class="projects">
+                          <span data-v-57fb6fee="" class="project-tag el-tag el-tag--light"
+                            ><i
+                              data-v-57fb6fee=""
+                              class="material-icons-outlined md-20 tag-folder-icon"
+                              >folder</i
+                            >
+                            Add new contacts to
+                          </span>
+                        </div>
+                      </div>
+                    </div></span
+                  >
+                </div>
+              </div>
+              <!---->
+              <div class="job-dialog-divider el-divider el-divider--horizontal"><!----></div>
+              <div class="footer">
+                <button type="button" class="sql-button sql-button--default sql-button--large">
+                  <span class="slot-container"
+                    ><!---->
+                    <div class="slotted-content">Cancel</div></span
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="sql-button continue-button sql-button--primary sql-button--large"
+                >
+                  <span class="slot-container"
+                    ><!---->
+                    <div class="slotted-content">Continue</div></span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div data-v-1609f320="" class="sql-extension-linkedin-notification">
+        <i data-v-1609f320="" class="material-icons circle">check_circle</i>
+        <div data-v-1609f320="" class="title">You’re all set!</div>
+        <div data-v-1609f320="" class="body-text">
+          Browse any Linkedin profile, you must be logged into Linkedin. If nothing happens,
+          try refreshing or opening a new window.
+        </div>
+        <button
+          data-v-1609f320=""
+          type="button"
+          class="sql-button open-linkedin-button sql-button--primary sql-button--xlarge"
+        >
+          <span class="slot-container"
+            ><!---->
+            <div class="slotted-content">Open Linkedin</div></span
+          >
+        </button>
+      </div>
+      <div>
+        <div data-v-71867749="">
+          <div
+            data-v-71867749=""
+            class="upgrade-modal-widget sql-modal__wrapper"
+            style="display: none"
+          >
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-label="dialog"
+              class="sql-modal sql-card"
+              style="margin-top: 15vh; width: 320px"
+            >
+              <div class="header-container">
+                <div><!----></div>
+                <button
+                  type="button"
+                  class="sql-button sql-modal__headerbtn header-item sql-button--default sql-button--large"
+                  aria-label="Close"
+                >
+                  <span class="slot-container"
+                    ><!---->
+                    <div class="slotted-content">
+                      <i class="material-icons md-20 sql-modal__close">close</i>
+                    </div></span
+                  >
+                </button>
+              </div>
+              <div class="sql-modal__body body-container">
+                <div data-v-71867749="" class="modal-content">
+                  <img
+                    data-v-71867749=""
+                    src="https://app.salesql.com/img/upgrade-account-plan.svg"
+                    width="272px"
+                    height="192px"
+                    alt="Upgrade Account"
+                    class="upgrade-account-image"
+                  /><span data-v-71867749="" class="upgrade-account-text"
+                    >Upgrade your account to unlock this feature</span
+                  ><button
+                    data-v-71867749=""
+                    type="button"
+                    class="sql-button sql-button--primary sql-button--large"
+                  >
+                    <span class="slot-container"
+                      ><!---->
+                      <div class="slotted-content">See Plans</div></span
+                    >
+                  </button>
+                </div>
+              </div>
+              <!---->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
